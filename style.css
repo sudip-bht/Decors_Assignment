@@ -1,0 +1,92 @@
+* {
+  margin: 0px 5px;
+  padding: 2px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #ffff;
+  color: #ffff;
+}
+
+.container {
+  padding: 2% 2%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo {
+  padding-right: 2%;
+  width: 150px;
+  height: 40px;
+}
+
+nav ul li {
+  text-decoration: none;
+  display: inline-block;
+  list-style: none;
+  margin: 10px 10px;
+}
+
+#header-text {
+  margin-top: 25%;
+  font-size: 30px;
+}
+.subtitle {
+  font-size: 60px;
+}
+#header-text h1 span {
+  color: #45136e;
+}
+
+/*body section */
+.container {
+  display: flex; /* Use flexbox to make the container a flex container */
+}
+
+.boxleft {
+  display: flex; /* Add flexbox */
+  flex-direction: column; /* Set flex direction to column */
+  justify-content: flex-end; /* Align items at the bottom */
+  position: relative;
+  background-color: #d9d9d9;
+  width: 60%; /* Set the width of the first element */
+  height: 900px; /* Set the height as needed */
+  border-radius: 20px; /* Optional: Add border for visualization */
+  box-sizing: border-box; /* Ensure border is included in width/height */
+}
+.box {
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  top: 50%; /* Position the top of the box at 50% of the parent's height */
+  left: 50%; /* Position the left of the box at 50% of the parent's width */
+  transform: translate(-50%, -50%); /* Center the box using transform */
+  gap: 0px;
+  border-radius: 20px;
+  opacity: 0px;
+  background-color: lightblue; /* Example background color */ /* Example background color */
+}
+#box-text {
+  margin-top: 25%;
+  font-size: 30px;
+}
+.box-text {
+  font-size: 60px;
+}
+#box-text h1 span {
+  color: #45136e;
+}
+
+.boxright {
+  background-color: #20d374;
+  flex-grow: 1; /* Let the second element grow and take the remaining space */
+  height: 900px; /* Set the height as needed */
+  border-radius: 20px; /* Optional: Add border for visualization */
+  box-sizing: border-box; /* Ensure border is included in width/height */
+}
