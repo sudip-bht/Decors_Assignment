@@ -12,21 +12,22 @@ body {
   color: #ffff;
 }
 
-.container {
-  padding: 2% 2%;
-}
-nav {
+/*homepage*/
+.navhomepage {
+  margin: 2%;
+  color: #000;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
+
 .logo {
-  padding-right: 2%;
+  margin-right: 10%;
   width: 150px;
   height: 40px;
 }
 
-nav ul li {
+.navhomepage ul li {
   text-decoration: none;
   display: inline-block;
   list-style: none;
@@ -63,6 +64,9 @@ nav ul li {
   background-color: #0f93a2; /* Example background color */ /* Example background color */
 }
 .boxleft {
+  padding-left: 2%;
+  padding-bottom: 2%;
+  margin-right: 2%;
   display: flex; /* Add flexbox */
   flex-direction: column; /* Set flex direction to column */
   justify-content: flex-end; /* Align items at the bottom */
@@ -106,13 +110,15 @@ nav ul li {
   font-weight: bold;
   color: black;
   top: 50%;
-  left: 0;
+  left: 4%;
   display: flex;
   flex-wrap: wrap;
   position: absolute;
   right: 0;
 }
 .row3 {
+  margin-top: 2%;
+  margin-bottom: 2%;
   font-size: 20px;
   font-weight: bold;
   color: black;
@@ -122,6 +128,8 @@ nav ul li {
   flex-direction: column;
 }
 .boxright {
+  width: 30%;
+  padding-right: 4%;
   display: flex; /* Add flexbox */
   flex-direction: column; /* Set flex direction to column */
   position: relative; /* Set the width of the first element */
@@ -134,11 +142,11 @@ nav ul li {
   box-sizing: border-box; /* Ensure border is included in width/height */
 }
 .boxleft1 {
+  margin-right: 2%;
   display: flex; /* Add flexbox */
   flex-direction: column; /* Set flex direction to column */
   justify-content: flex-end; /* Align items at the bottom */
   position: relative;
-
   width: 60%; /* Set the width of the first element */
   height: 900px; /* Set the height as needed */
   /* Optional: Add border for visualization */
@@ -172,10 +180,9 @@ nav ul li {
 
 .arrowbutton {
   height: 5%;
-
   color: black;
   top: 50%;
-  right: 10%;
+  padding-right: 2%;
   display: flex;
   flex-wrap: wrap;
   position: absolute;
@@ -190,7 +197,152 @@ nav ul li {
   font-size: 20px;
   color: black;
   align-items: center;
-  margin-bottom: 4%;
-  margin-left: 2%;
-  margin-right: 2%;
+}
+
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #fff; /* white background */
+  color: #000; /* black text */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+/* Search bar styling */
+.search-bar {
+  flex: 1;
+  background-color: #ccc;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+
+.search-bar::before {
+  content: url("images/search bar leading.png"); /* Add leading icon image */
+  position: absolute;
+  left: 10px; /* Adjust position as needed */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-bar::after {
+  content: url("images/search bar trailing.png"); /* Add trailing icon image */
+  position: absolute;
+  right: 10px; /* Adjust position as needed */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Navigation icons styling */
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+/* Custom icon styling */
+.nav-icons img {
+  width: 30px;
+  height: auto;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.spacer {
+  width: 30px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+}
+
+.bigspacer {
+  width: 50px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+}
+
+.nav-button {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 10px 20px; /* Space between buttons */
+}
+
+.bottom-navbar {
+  background-color: #fff; /* white background */
+  color: #000; /* black text */
+
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.nav-icon {
+  padding-right: 10px; /* Add padding to the right of each icon */
+}
+
+.separator {
+  border: none;
+  border-top: 1px solid #ccc; /* Thin greyish horizontal line */
+  margin-top: 5px; /* Adjust margin-top as needed */
+}
+
+/*landing page*/
+.margin {
+  margin: 3%;
+}
+.black-box {
+  margin-top: 2%;
+  padding: 4%;
+  background-color: #000;
+}
+
+.black-box h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.black-box p {
+  font-size: 16px;
+}
+
+.button-shopnow {
+  width: 80px;
+  border: none;
+  color: black;
+  margin-top: 1%;
+  padding: 0.5%;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+}
+.sale-box {
+  margin-top: 4%;
+  display: flex;
+}
+.boximage {
+  object-fit: contain;
+  display: flex; /* Add flexbox */
+  flex-direction: column; /* Set flex direction to column */
+  justify-content: flex-end; /* Align items at the bottom */
+  position: relative;
+  width: 50%; /* Set the width of the first element */
+  height: 500px; /* Set the height as needed */
+  /* Optional: Add border for visualization */
+  box-sizing: border-box; /* Ensure border is included in width/height */
+}
+.boxtext {
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  width: 50%;
+  height: 400px;
 }
