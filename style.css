@@ -49,7 +49,8 @@ body {
 .container {
   position: relative;
   display: flex;
-  justify-content: flex-end; /* Use flexbox to make the container a flex container */
+  justify-content: flex-end;
+  padding: 20px; /* Use flexbox to make the container a flex container */
 }
 .box {
   position: absolute;
@@ -256,9 +257,9 @@ body {
   cursor: pointer;
 }
 
-.spacer {
-  width: 30px; /* Adjust width as needed */
-  height: 30px; /* Adjust height as needed */
+.verticalspacer {
+   /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
 }
 
 .bigspacer {
@@ -346,3 +347,193 @@ body {
   width: 50%;
   height: 400px;
 }
+
+
+.photo {
+  position: relative;
+  
+}
+
+.photo img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 2px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1;
+}
+
+h3 {
+  color: black; /* Set heading color to black */
+}
+
+p {
+  color: black; 
+  font-size: 12px;
+  /* Set heading color to black */
+}
+
+
+.photo-grid {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.photo {
+   margin-right: 17px;
+   margin-top: 10px;
+  
+}
+
+.photo img {
+  width: 160px;
+  height: 190px;
+  object-fit: cover;
+}
+
+.button {
+  display: block;
+  width: 60%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 8px 8px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.photo-item {
+  position: relative;
+ 
+  margin-right: 30px;
+  margin-top: 30px; /* Add some space between each photo */
+}
+
+.photo-item img {
+  width: 270px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.description-wrapper {
+  position: absolute;
+  bottom: -10;
+  left: 0;
+  width: 100%;
+  padding-top: 10px;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.link-text {
+  text-decoration: underline;
+  color: black;
+  font-size: 16;
+  font-weight: bold;
+}
+
+.photo-kitchen {
+  position: relative;
+  margin-right: 20px;
+  
+  margin-top: 30px; /* Add some space between each photo */
+}
+
+.photo-kitchen img {
+  width: 200px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.black-h1{
+  color: black;
+}
+
+/* Define general styles for smaller screens */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+  
+  .logo {
+    margin: 0; /* Remove margin */
+    margin-bottom: 10px; /* Add margin bottom for separation */
+  }
+  
+  .nav-icons {
+    margin-top: 10px; /* Add margin top for separation */
+  }
+  
+  .bottom-navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+  
+  .nav-button {
+    margin-bottom: 8px; /* Add margin bottom for separation */
+  }
+
+  .photo-grid {
+    flex-direction: column; /* Stack photos vertically */
+  }
+
+  .photo {
+    margin-right: 20; /* Remove right margin for full width */
+    margin-bottom: 20px;
+    align-items: center; /* Add margin bottom for separation */
+  }
+
+  .photo img {
+    width: 30%; /* Make photos full width */
+    height: 200px; /* Maintain aspect ratio */
+  }
+
+
+  .description-wrapper {
+    bottom: -5; /* Move description to bottom */
+    padding-top: 0px; /* Adjust padding */
+    text-align: left;
+     /* Center align text */
+  }
+  
+  .button {
+    width: 15%;
+    font-size: 8px;
+    margin-left: 15%;
+    left: 0;
+     /* Make button full width */
+  }
+  /* For other pages to reduce the size of photos */
+
+.centered-image{
+  height: 100px;
+}
+.boxleft{
+  height: 400px;
+}
+.sub-title h1 {
+  font-size: 20px;
+}
+.boxright{
+  height: 400px;
+}
+}
+
+
