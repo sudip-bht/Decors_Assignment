@@ -50,7 +50,18 @@ nav ul li {
   display: flex;
   justify-content: flex-end; /* Use flexbox to make the container a flex container */
 }
-
+.box {
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  top: 50%; /* Position the top of the box at 50% of the parent's height */
+  left: 50%; /* Position the left of the box at 50% of the parent's width */
+  transform: translate(-50%, -50%); /* Center the box using transform */
+  gap: 0px;
+  border-radius: 20px;
+  opacity: 0px;
+  background-color: #0f93a2; /* Example background color */ /* Example background color */
+}
 .boxleft {
   display: flex; /* Add flexbox */
   flex-direction: column; /* Set flex direction to column */
