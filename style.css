@@ -460,3 +460,80 @@ p {
   object-fit: cover;
   border-radius: 2px;
 }
+
+.black-h1{
+  color: black;
+}
+
+/* Define general styles for smaller screens */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+  
+  .logo {
+    margin: 0; /* Remove margin */
+    margin-bottom: 10px; /* Add margin bottom for separation */
+  }
+  
+  .nav-icons {
+    margin-top: 10px; /* Add margin top for separation */
+  }
+  
+  .bottom-navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+  
+  .nav-button {
+    margin-bottom: 8px; /* Add margin bottom for separation */
+  }
+
+  .photo-grid {
+    flex-direction: column; /* Stack photos vertically */
+  }
+
+  .photo {
+    margin-right: 20; /* Remove right margin for full width */
+    margin-bottom: 20px;
+    align-items: center; /* Add margin bottom for separation */
+  }
+
+  .photo img {
+    width: 30%; /* Make photos full width */
+    height: 200px; /* Maintain aspect ratio */
+  }
+
+
+  .description-wrapper {
+    bottom: -5; /* Move description to bottom */
+    padding-top: 0px; /* Adjust padding */
+    text-align: left;
+     /* Center align text */
+  }
+  
+  .button {
+    width: 15%;
+    font-size: 8px;
+    margin-left: 15%;
+    left: 0;
+     /* Make button full width */
+  }
+  /* For other pages to reduce the size of photos */
+
+.centered-image{
+  height: 100px;
+}
+.boxleft{
+  height: 400px;
+}
+.sub-title h1 {
+  font-size: 20px;
+}
+}
+
+.boxright{
+  height: 400px;
+}
+
