@@ -46,7 +46,9 @@ nav ul li {
 
 /*body section */
 .container {
-  display: flex; /* Use flexbox to make the container a flex container */
+  position: relative;
+  display: flex;
+  justify-content: flex-end; /* Use flexbox to make the container a flex container */
 }
 
 .boxleft {
@@ -60,33 +62,124 @@ nav ul li {
   border-radius: 20px; /* Optional: Add border for visualization */
   box-sizing: border-box; /* Ensure border is included in width/height */
 }
-.box {
+
+.sub-title {
+  font-size: 20px;
+  color: black;
+}
+.body-text {
+  font-size: 15px;
+  color: black;
+}
+.centered-image {
+  height: 70%;
+  width: 80%;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered-text {
   position: absolute;
-  width: 40%;
-  height: 60%;
-  top: 50%; /* Position the top of the box at 50% of the parent's height */
-  left: 50%; /* Position the left of the box at 50% of the parent's width */
-  transform: translate(-50%, -50%); /* Center the box using transform */
-  gap: 0px;
-  border-radius: 20px;
-  opacity: 0px;
-  background-color: lightblue; /* Example background color */ /* Example background color */
+  top: 50%;
+  left: 16%;
 }
-#box-text {
-  margin-top: 25%;
-  font-size: 30px;
-}
-.box-text {
-  font-size: 60px;
-}
-#box-text h1 span {
-  color: #45136e;
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
+.row2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  top: 50%;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  right: 0;
+}
+.row3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 .boxright {
-  background-color: #20d374;
-  flex-grow: 1; /* Let the second element grow and take the remaining space */
+  display: flex; /* Add flexbox */
+  flex-direction: column; /* Set flex direction to column */
+  position: relative; /* Set the width of the first element */
   height: 900px; /* Set the height as needed */
+  /* Optional: Add border for visualization */
+  box-sizing: border-box;
+  background-color: #20d374;
+  flex-grow: 1; /* Let the second element grow and take the remaining space */ /* Set the height as needed */
   border-radius: 20px; /* Optional: Add border for visualization */
   box-sizing: border-box; /* Ensure border is included in width/height */
+}
+.boxleft1 {
+  display: flex; /* Add flexbox */
+  flex-direction: column; /* Set flex direction to column */
+  justify-content: flex-end; /* Align items at the bottom */
+  position: relative;
+
+  width: 60%; /* Set the width of the first element */
+  height: 900px; /* Set the height as needed */
+  /* Optional: Add border for visualization */
+  box-sizing: border-box; /* Ensure border is included in width/height */
+}
+.boxright1 {
+  display: flex; /* Add flexbox */
+  flex-direction: column; /* Set flex direction to column */
+  position: relative; /* Set the width of the first element */
+  height: 900px; /* Set the height as needed */
+  /* Optional: Add border for visualization */
+  box-sizing: border-box;
+  flex-grow: 1; /* Let the second element grow and take the remaining space */ /* Set the height as needed */
+  border-radius: 20px; /* Optional: Add border for visualization */
+  box-sizing: border-box; /* Ensure border is included in width/height */
+}
+
+.pause-button {
+  height: 10%;
+  width: 10%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.image-inside {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.arrowbutton {
+  height: 5%;
+
+  color: black;
+  top: 50%;
+  right: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  right: 0;
+}
+
+.contact-section {
+  padding: 3%;
+  margin-top: 4%;
+  background-color: #f9d8d8;
+  padding-left: 20px;
+  font-size: 20px;
+  color: black;
+  align-items: center;
+  margin-bottom: 4%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
