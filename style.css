@@ -183,3 +183,107 @@ nav ul li {
   margin-left: 2%;
   margin-right: 2%;
 }
+
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #fff; /* white background */
+  color: #000; /* black text */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+/* Logo styling */
+.logo {
+  margin-right: auto;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Search bar styling */
+.search-bar {
+  flex: 1;
+  background-color: #ccc;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+
+.search-bar::before {
+  content: url('images/search bar leading.png'); /* Add leading icon image */
+  position: absolute;
+  left: 10px; /* Adjust position as needed */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-bar::after {
+  content: url('images/search bar trailing.png'); /* Add trailing icon image */
+  position: absolute;
+  right: 10px; /* Adjust position as needed */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+/* Navigation icons styling */
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+/* Custom icon styling */
+.nav-icons img {
+  width: 30px;
+  height: auto;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.spacer {
+  width: 30px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+}
+
+.bigspacer {
+  width: 50px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+}
+
+.nav-button {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 10px 20px; /* Space between buttons */
+}
+
+.bottom-navbar {
+  background-color: #fff; /* white background */
+  color: #000; /* black text */
+  
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.nav-icon {
+  padding-right: 10px; /* Add padding to the right of each icon */
+}
+
+.separator {
+  border: none;
+  border-top: 1px solid #ccc; /* Thin greyish horizontal line */
+  margin-top: 5px; /* Adjust margin-top as needed */
+}
