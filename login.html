@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF=8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Decor</title>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/d5e20c5849.js"
@@ -14,17 +14,7 @@
     <div id="header">
       <div id="container"></div>
     </div>
-    <nav class="navhomepage">
-      <img src="images/logo.png" class="logo" />
-      <button class="hamburger"><i class="fas fa-bars"></i></button>
-      <ul id="side-menu">
-        <li><a href="#header">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#protfolio">Protfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+
     <div id="HomePage" class="margin">
       <div class="container">
         <div class="boxleft">
@@ -64,13 +54,18 @@
         <img src="images/logo.png" class="logo" />
       </div>
 
-      <div class="container">
-        <div class="boxleft1">
-          <img src="images/image1.jpeg" class="image-inside" />
-        </div>
-        <div class="boxright1">
-          <img src="images/image2.jpeg" alt="Image" class="image-inside" />
-        </div>
+      <div class="login-container">
+        <h2>Login</h2>
+        <form class="login-form" action="#" method="post">
+          <input type="text" name="username" placeholder="Username" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <a href="#index.html"><button type="submit">Login</button></a>
+        </form>
       </div>
       <div class="contact-section">
         <p>
